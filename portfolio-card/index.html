@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interactive profile card</title>
+        <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+    </head>
+    <body>
+     
+
+  <div class="showcase-container">
+    
+    <!-- Top Bar Navigation Controls -->
+    <header class="controls-bar">
+      <div class="brand-logo">
+        <i class="fa-solid fa-code"></i>
+        <span>Dev Showcase</span>
+      </div>
+
+      <div class="control-actions">
+        <!-- Color Accent Switcher Buttons -->
+        <div class="accent-selector" title="Change Accent Theme">
+          <button class="accent-btn active" data-color="indigo" aria-label="Indigo Theme"></button>
+          <button class="accent-btn" data-color="emerald" aria-label="Emerald Theme"></button>
+          <button class="accent-btn" data-color="rose" aria-label="Rose Theme"></button>
+          <button class="accent-btn" data-color="amber" aria-label="Amber Theme"></button>
+        </div>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      </header>
+      <!-- Main Profile Card Component -->
+    <main class="profile-card">
+      
+      <!-- Card Banner / Cover -->
+      <div class="card-cover">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open to Learning & Collaboration</span>
+        </div>
+      </div>
+
+      <!-- Main Body Details -->
+      <div class="card-body">
+        
+        <!-- Profile Picture Placeholder -->
+        <div class="avatar-wrapper">
+<img src="my profile.jpg" alt="Abduselam's Portrait" class="avatar-img" />
+        </div>
+        <!-- Profile Title & Metadata -->
+        <div class="profile-meta">
+          <div class="user-info">
+            <h1>Abduselam.s</h1>
+            <p class="headline">Information Science Student & Aspiring Web Developer</p>
+            <div class="location-tag">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Jimma, Ethiopia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio Description -->
+        <p class="bio-text">
+          Focusing on web development fundamentals, clean code design, and Linux systems. Passionate about writing clear code, building responsive interfaces, and collaborating on open-source student projects.
+        </p>
+        <!-- Quick Stats Component (CSS Grid) -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">4+</div>
+            <div class="stat-label">Mini Builds</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100+</div>
+            <div class="stat-label">WPM Typing</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Languages</div>
+          </div>
+        </div>
+
+        <!-- Filterable Technical Skills Badges -->
+        <section class="skills-section">
+          <div class="section-title">
+            <span>Technical Skills</span>
+            <div class="skill-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="web">Web Dev</button>
+              <button class="filter-btn" data-filter="lang">Languages</button>
+              <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+          </div>
+          <div class="skills-grid" id="skillsGrid">
+            <!-- Web Dev Badges -->
+            <div class="skill-badge" data-cat="web">
+              <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-badge" data-cat="web">
+              <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-badge" data-cat="web">
+              <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-badge" data-cat="web">
+              <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+              <span>React</span>
+            </div>
+            <!-- Languages Badges -->
+            <div class="skill-badge" data-cat="lang">
+              <i class="fa-solid fa-database" style="color: #00758f;"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-badge" data-cat="lang">
+              <i class="fa-brands fa-node-js" style="color: #339933;"></i>
+              <span>Node.js</span>
+            </div>
+
+  
+            <div class="skill-badge" data-cat="tools">
+              <i class="fa-brands fa-git-alt" style="color: #f05032;"></i>
+              <span>Git & GitHub</span>
+            </div>
+          </div>
+        </section>
+        <div class="card-footer">
+  <!-- Left Side: Buttons -->
+  <div class="button-group" style="display: flex; gap: 10px;">
+    
+
+  <!-- Right Side: Clustered Social Links -->
+  <div class="social-links">
+    <a href="https://t.me/Vini10ab" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+    <a href="https://www.instagram.com/vini.jr132?igsh=MWJuNGRyZWVjbHZiZw==" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://x.com/Abduse499849" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://github.com/abduse816-debug" class="social-icon"><i class="fa-brands fa-Github"></i></a>
+  </div>
+</div>
+
+          <div class="action-group">
+            <button class="btn btn-secondary" id="copyEmailBtn">
+              <i class="fa-solid fa-copy"></i>
+              <span>Copy Email</span>
+            </button>
+            <button class="btn btn-primary" id="openContactBtn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </button>
+          </div>
+          </footer>
+
+      </div>
+    </main>
+  </div>
+ <!-- Contact Modal / Drawer -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Send a Message</h3>
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+    </div>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="senderName">Your Name</label>
+        <input type="text" id="senderName" class="form-input" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="senderEmail">Your Email</label>
+        <input type="email" id="senderEmail" class="form-input" placeholder="e.g. example@gmail.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="senderMessage">Message</label>
+        <textarea id="senderMessage" class="form-input" placeholder="Type your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </div>
+</div>
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
+    <span id="toastMsg">Notification message</span>
+  </div>
+
+        <!-- CONTACT MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Send Me a Message</h2>
+  
+        <script src="script.js"></script>
+    </body>
+</html>
