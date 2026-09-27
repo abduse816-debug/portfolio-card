@@ -163,48 +163,47 @@
       </div>
     </main>
   </div>
- <!-- Contact Modal / Drawer -->
-<div class="modal-overlay" id="contactModal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Send a Message</h3>
-      <button class="close-btn" id="closeModalBtn">&times;</button>
-    </div>
-    <form id="contactForm">
-      <div class="form-group">
-        <label for="senderName">Your Name</label>
-        <input type="text" id="senderName" class="form-input" placeholder="Enter your name" required />
-      </div>
-
-      <div class="form-group">
-        <label for="senderEmail">Your Email</label>
-        <input type="email" id="senderEmail" class="form-input" placeholder="e.g. example@gmail.com" required />
-      </div>
-
-      <div class="form-group">
-        <label for="senderMessage">Message</label>
-        <textarea id="senderMessage" class="form-input" placeholder="Type your message here..." required></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-        <i class="fa-solid fa-paper-plane"></i>
-        <span>Send Message</span>
-      </button>
-    </form>
-  </div>
-</div>
+ 
   <!-- Toast Notification Container -->
   <div class="toast" id="toast">
     <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
     <span id="toastMsg">Notification message</span>
   </div>
 
-        <!-- CONTACT MODAL -->
-<div id="contactModal" class="modal">
+<!-- Modal Overlay & Box -->
+<div id="contactModal" class="modal hidden">
   <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <h2>Send Me a Message</h2>
-  
+    
+    <!-- Close Button -->
+    <button id="closeModalBtn" type="button" class="close-btn" aria-label="Close modal">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h2>Send a Message</h2>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+      </div>
+
+      <button type="submit" id="submitBtn" class="submit-btn">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
         <script src="script.js"></script>
     </body>
 </html>
